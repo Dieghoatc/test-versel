@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+import sbjs from 'sourcebuster'
+
 function App() {
+
+
+  console.log(sbjs)
+
   return (
     <div className="App">
       <header className="App-header">
