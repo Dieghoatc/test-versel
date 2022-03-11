@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import sbjs from 'sourcebuster';
 
-import sbjs from 'sourcebuster'
 
 function App() {
 
+  const params = new URLSearchParams(window.location.search)
 
-  console.log(sbjs)
+  console.log(params)
+
+  const gaMarketingVars = {
+    utmSource: params.get('utm_source')
+  }
+  console.log(gaMarketingVars)
+
+  sbjs.init();
+  console.log(sbjs.get)
 
   return (
     <div className="App">
